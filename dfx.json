@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "defreelance_backend": {
+      "main": "src/defreelance_backend/main.mo",
+      "type": "motoko"
+    },
+    "defreelance_frontend": {
+      "dependencies": [
+        "defreelance_backend"
+      ],
+      "source": [
+        "src/defreelance_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "defreelance_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
